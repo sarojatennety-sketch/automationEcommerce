@@ -1,0 +1,40 @@
+﻿# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+.idea/
+*.log
+*.tmp
+*.bak
+
+# Eclipse
+.metadata/
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Maven
+.settings/
+log/
+**/logs/
+
+# Test Output
+test-output/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+*.log
+
+# Temporary files
+*.tmp
