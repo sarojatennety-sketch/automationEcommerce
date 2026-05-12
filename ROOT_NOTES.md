@@ -18,7 +18,8 @@ This file is the root note you can use to ask Copilot to install the project dir
 
 ```powershell
 cd C:\Users\Saroja\automationEcommerce
-.\setup-automationEcommerce.ps1
+.\setup-automationEcommerce.ps1git
+
 ```
 
 ## Copilot prompt example
@@ -32,6 +33,7 @@ Use this prompt with Copilot:
 - If `winget` is available, the script may install missing tools automatically.
 - If the script cannot install software, install Java, Maven, Git, and Chrome manually first.
 - If you already cloned the repo, skip cloning and just run the script.
+- For Eclipse-specific import, see `README_ECLIPSE.md`.
 
 ## Repository URL
 

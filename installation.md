@@ -209,6 +209,14 @@ If you want to use the script with a different clone location:
 .\setup-automationEcommerce.ps1 -ClonePath "C:\Users\Saroja\automationEcommerce"
 ```
 
+## 11. Eclipse import
+
+If you are opening this project in Eclipse, use the Eclipse-specific guide:
+
+- `README_ECLIPSE.md`
+
+This project already includes Eclipse workspace settings under `.project`, `.classpath`, and `.settings`, so Eclipse import should work without additional project generation.
+
 ---
 
 This guide is written specifically for the current Windows Selenium Maven project and includes the full setup needed to migrate it to a new Windows machine.
