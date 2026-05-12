@@ -2,6 +2,47 @@
 
 This document explains how to set up a new Windows machine to run the `automationEcommerce` Selenium test project.
 
+Open Powershell and run - cd C:\Users\Saroja\automationEcommerce
+.\setup-automationEcommerce.ps1
+
+## 0. Quick install sequence
+
+If you want to run the setup directly on a new machine, follow these steps in order:
+
+1. Install Java JDK 11 or higher
+2. Install Apache Maven 3.6+
+3. Install Git for Windows
+4. Install Google Chrome
+5. Install ChromeDriver that matches your Chrome version
+6. Set the required environment variables
+7. Clone the GitHub repository
+8. Run the Maven test command
+
+Use this PowerShell command sequence after installing the required software:
+
+```powershell
+$env:JAVA_HOME = 'C:\Program Files\Java\jdk-21.0.10'
+$env:MAVEN_HOME = 'C:\Program Files\apache-maven-3.9.15'
+$env:PATH = "$env:JAVA_HOME\bin;$env:MAVEN_HOME\bin;$env:PATH"
+$env:CHROME_DRIVER_PATH = 'C:\WebDriver\chromedriver.exe'
+
+java -version
+mvn -version
+git --version
+
+cd C:\Users\Saroja\Documents
+git clone https://github.com/sarojatennety-sketch/automationEcommerce.git
+cd automationEcommerce
+mvn test
+```
+
+If the repository is already present on the machine, skip the `git clone` step and run:
+
+```powershell
+cd C:\Users\Saroja\automationEcommerce
+mvn test
+```
+
 ## 1. Required software
 
 Install the following in this order:
@@ -147,6 +188,25 @@ Then run:
 
 ```powershell
 mvn test
+```
+
+## 10. Run the provided setup script
+
+A ready-to-run script is available in the repository root:
+
+- `setup-automationEcommerce.ps1`
+
+Run it from PowerShell like this:
+
+```powershell
+cd C:\Users\Saroja\automationEcommerce
+.\setup-automationEcommerce.ps1
+```
+
+If you want to use the script with a different clone location:
+
+```powershell
+.\setup-automationEcommerce.ps1 -ClonePath "C:\Users\Saroja\automationEcommerce"
 ```
 
 ---
